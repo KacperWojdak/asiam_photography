@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
 
 import {
   Cormorant_Garamond,
@@ -47,7 +48,10 @@ export default function RootLayout({
       lang="en"
       className={`${barlow.variable} ${cormorant.variable} ${condensed.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        </body>
     </html>
   );
 }
