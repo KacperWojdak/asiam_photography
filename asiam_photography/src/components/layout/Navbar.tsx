@@ -23,7 +23,7 @@ export default function Navbar() {
     >
       <div className="flex items-center justify-between px-6 md:px-10 py-4">
         {/* Logo */}
-        <Link href="/" className="font-serif text-sm tracking-widest uppercase text-light">
+        <Link href="/" className="font-serif text-base tracking-widest uppercase text-light">
           Asia <span className="italic text-gold">M.</span> Photography
         </Link>
 
@@ -38,7 +38,7 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="font-condensed text-xs tracking-widest uppercase text-muted hover:text-light transition-colors duration-200"
+                className="font-condensed text-sm tracking-widest uppercase text-muted hover:text-light transition-colors duration-200"
               >
                 {link.label}
               </Link>
@@ -49,7 +49,7 @@ export default function Navbar() {
                 href="https://www.instagram.com/asiamankowska"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-condensed text-xs tracking-widest uppercase text-muted hover:text-gold transition-colors"
+                className="font-condensed text-sm tracking-widest uppercase text-muted hover:text-gold transition-colors duration-200"
             >
                 Instagram ↗
             </a>
@@ -74,7 +74,7 @@ export default function Navbar() {
           menuOpen ? "max-h-64 border-t border-white/5" : "max-h-0"
         }`}
       >
-        <ul className="flex flex-col px-6 py-4 gap-5 list-none bg-dark/95 backdrop-blur-sm">
+        <ul className="flex flex-col px-6 py-4 gap-5 list-none bg-dark/95 backdrop-blur-sm items-center">
           {[
             { label: "Portrait", href: "#portrait" },
             { label: "Sport", href: "#sport" },
@@ -84,7 +84,7 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="font-condensed text-xs tracking-widest uppercase text-muted hover:text-light transition-colors"
+                className="font-condensed text-sm tracking-widest uppercase text-muted hover:text-light transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
@@ -92,12 +92,13 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <a>
-              href="https://www.instagram.com/asiamankowska"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-condensed text-xs tracking-widest uppercase text-muted hover:text-gold transition-colors"
-              Instagram ↗
+            <a
+                href="https://www.instagram.com/asiamankowska"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-condensed text-sm tracking-widest uppercase text-muted hover:text-gold transition-colors"
+            >
+                Instagram ↗
             </a>
           </li>
         </ul>
