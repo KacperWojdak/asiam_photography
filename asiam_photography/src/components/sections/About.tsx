@@ -33,7 +33,7 @@ export default function About() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-10">
 
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/profile.php?id=100094071768987"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-2"
@@ -49,7 +49,7 @@ export default function About() {
           <span className="hidden sm:block w-px h-10 bg-white/5" />
 
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/profile.php?id=61558495311793"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-2"
