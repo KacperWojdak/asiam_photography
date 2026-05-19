@@ -30,10 +30,10 @@ export default function Navbar() {
         {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-8 list-none">
           {[
-            { label: "O Mnie", href: "#about" },
-            { label: "Galeria Portretowa", href: "#portrait" },
-            { label: "Galeria Sportowa", href: "#sport" },
-            { label: "Kontakt", href: "#contact" },
+            { label: "O Mnie", href: "/about" },
+            { label: "Galeria Portretowa", href: "/portrait" },
+            { label: "Galeria Sportowa", href: "/sport" },
+            { label: "Kontakt", href: "/contact" },
           ].map((link) => (
             <li key={link.href}>
               <Link
@@ -76,10 +76,10 @@ export default function Navbar() {
       >
         <ul className="flex flex-col px-6 py-4 gap-5 list-none bg-dark/95 backdrop-blur-sm items-center">
           {[
-            { label: "O mnie", href: "#about" },
-            { label: "Galeria Portretowa", href: "#portrait" },
-            { label: "Galeria Sportowa", href: "#sport" },
-            { label: "Kontakt", href: "#contact" },
+            { label: "O mnie", href: "/about" },
+            { label: "Galeria Portretowa", href: "/portrait" },
+            { label: "Galeria Sportowa", href: "/sport" },
+            { label: "Kontakt", href: "/contact" },
           ].map((link) => (
             <li key={link.href}>
               <Link
