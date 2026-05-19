@@ -16,16 +16,16 @@ export default function About() {
 
         {/* Heading */}
         <h2 className="font-serif text-4xl md:text-5xl font-light leading-[1.2] text-light mb-12 whitespace-nowrap">
-          Two worlds, <em className="italic text-gold">one perspective</em>
+          Dwa światy, <em className="italic text-gold">jedna perspektywa</em>
         </h2>
 
         {/* Bio */}
         <div className="mb-12 space-y-5 max-w-md">
           <p className="font-sans text-base font-light leading-relaxed text-muted">
-            Based in Poland, Asia Mańkowska works across two distinct photographic worlds — the still and intimate, and the fast and visceral. Whether capturing the emotion of a quiet portrait or the electricity of a football stadium, every frame tells a human story.
+            Działając w Polsce, Asia Mańkowska porusza się między dwoma różnymi światami fotografii — cichym i intymnym oraz dynamicznym i pełnym energii. Niezależnie od tego, czy uchwytuje emocje podczas spokojnej sesji portretowej, czy elektryzującą atmosferę stadionu piłkarskiego — każda klatka opowiada ludzką historię.
           </p>
           <p className="font-sans text-base font-light leading-relaxed text-muted">
-            With a gentle eye for natural light and a sharp instinct for decisive moments, Asia brings the same dedication and passion to every shoot — from golden-hour portraits to the final whistle.
+            Z wrażliwym okiem na naturalne światło i instynktem do decydujących momentów, Asia wnosi to samo zaangażowanie i pasję w każdą sesję — od portretów w złotej godzinie po ostatni gwizdek sędziego.
           </p>
         </div>
 

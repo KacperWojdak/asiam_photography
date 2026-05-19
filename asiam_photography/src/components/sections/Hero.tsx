@@ -37,24 +37,24 @@ export default function Hero() {
           <div className="flex items-center gap-3 mb-6">
             <span className="block w-6 h-px bg-gold" />
             <span className="font-condensed text-xs tracking-[0.28em] uppercase text-gold">
-              Portrait · Nature · Occasions
+              Portret · Natura · Okolicznościowe
             </span>
             <span className="block w-6 h-px bg-gold" />
           </div>
 
           <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-light leading-[1.05] text-light mb-6">
-            Moments<br />
-            <em className="italic text-gold">caught in soft light</em>
+            Chwile<br />
+            <em className="italic text-gold">uchwycone w miękkim świetle</em>
           </h1>
 
           <p className="font-sans text-base md:text-lg font-light leading-relaxed text-muted mb-8">
-            Intimate portraits, wedding occasions, and the quiet beauty of the natural world — captured with patience and a poet's eye.
+            Intymne portrety, sesje okolicznościowe i cicha piękność świata natury — uchwycone z cierpliwością i poetyckim okiem.
           </p>
 
           <Link href="#portrait"
               className="inline-block font-condensed text-sm tracking-[0.22em] uppercase text-gold px-10 py-4 hover:text-light transition-all duration-300"
             >
-            View gallery
+            Zobacz galerię
           </Link>
         </div>
       </div>
@@ -94,18 +94,18 @@ export default function Hero() {
           <div className="flex items-center gap-3 mb-6">
             <span className="block w-6 h-px bg-[#8B1A2F]" />
             <span className="font-condensed text-xs tracking-[0.28em] uppercase text-[#8B1A2F]">
-              Football · Sport Events
+              Piłka Nożna · Imprezy Sportowe
             </span>
             <span className="block w-6 h-px bg-[#8B1A2F]" />
           </div>
 
           <h2 className="font-condensed text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.92] uppercase text-light mb-6">
-            Born in<br />
-            <span style={{ color: "#8B1A2F" }}>Motion</span>
+            Zdjęcia w<br />
+            <span style={{ color: "#8B1A2F" }}>Ruchu</span>
           </h2>
 
           <p className="font-sans text-base md:text-lg font-light leading-relaxed text-muted mb-8">
-            High-energy sport photography that captures the pulse of the game — raw emotion, speed, and peak moments from the pitch.
+            Energetyczna fotografia sportowa, która uchwytuje puls gry — surowe emocje, szybkość i kluczowe momenty z boiska.
           </p>
 
           <Link
@@ -113,7 +113,7 @@ export default function Hero() {
               className="inline-block font-condensed text-sm tracking-[0.22em] uppercase px-10 py-4 hover:opacity-60 transition-all duration-300"
               style={{ color: "#8B1A2F" }}
             >
-            View sport gallery
+            Zobacz galerię sportową
           </Link>
         </div>
       </div>

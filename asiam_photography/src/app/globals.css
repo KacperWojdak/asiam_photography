@@ -3,10 +3,10 @@
 @theme {
   --color-gold: #c8a96e;
   --color-sport: #8b1a2f;
-  --color-dark: #0e0e0e;
-  --color-dark-soft: #1a1612;
-  --color-dark-sport: #0a0a0a;
-  --color-muted: #6a6460;
+  --color-dark: #141210;
+  --color-dark-soft: #1e1a16;
+  --color-dark-sport: #100e0e;
+  --color-muted: #7a7570;
   --color-light: #f0ece4;
 
   --font-sans: var(--font-barlow);
