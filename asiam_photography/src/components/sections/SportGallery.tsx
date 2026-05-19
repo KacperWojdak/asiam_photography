@@ -57,17 +57,17 @@ export default function SportGallery() {
             </span>
           </div>
           <h2 className="font-condensed text-4xl md:text-5xl font-bold uppercase text-light">
-            Football &amp; <span style={{ color: "#8B1A2F" }}>Sport Events</span>
+            Piłka Nożna &amp; <span style={{ color: "#8B1A2F" }}>Imprezy Sportowe</span>
           </h2>
         </div>
 
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/profile.php?id=61558495311793"
           target="_blank"
           rel="noopener noreferrer"
           className="font-condensed text-xs tracking-[0.2em] uppercase text-muted hover:text-[#8B1A2F] transition-colors duration-200 hidden md:block"
         >
-          View all on Facebook ↗
+          Sprawdź galerie na Facebooku ↗
         </a>
       </div>
 
@@ -155,12 +155,12 @@ export default function SportGallery() {
       {/* Mobile Facebook link */}
       <div className="mt-10 flex justify-center md:hidden">
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/profile.php?id=61558495311793"
           target="_blank"
           rel="noopener noreferrer"
           className="font-condensed text-xs tracking-[0.2em] uppercase text-muted hover:text-[#8B1A2F] transition-colors duration-200"
         >
-          View all on Facebook ↗
+          Sprawdź galerie na Facebook ↗
         </a>
       </div>
 

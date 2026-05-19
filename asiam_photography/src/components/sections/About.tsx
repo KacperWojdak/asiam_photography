@@ -22,10 +22,10 @@ export default function About() {
         {/* Bio */}
         <div className="mb-12 space-y-5 max-w-md">
           <p className="font-sans text-base font-light leading-relaxed text-muted">
-            Działając w Polsce, Asia Mańkowska porusza się między dwoma różnymi światami fotografii — cichym i intymnym oraz dynamicznym i pełnym energii. Niezależnie od tego, czy uchwytuje emocje podczas spokojnej sesji portretowej, czy elektryzującą atmosferę stadionu piłkarskiego — każda klatka opowiada ludzką historię.
+            Poruszam się między dwoma różnymi światami fotografii — cichym i poezyjnym oraz dynamicznym i pełnym energii. Niezależnie od tego, czy uchwytuje emocje podczas spokojnej sesji portretowej, czy elektryzującą atmosferę stadionu piłkarskiego — każda klatka opowiada ludzką historię.
           </p>
           <p className="font-sans text-base font-light leading-relaxed text-muted">
-            Z wrażliwym okiem na naturalne światło i instynktem do decydujących momentów, Asia wnosi to samo zaangażowanie i pasję w każdą sesję — od portretów w złotej godzinie po ostatni gwizdek sędziego.
+            Z wrażliwym okiem na naturalne światło i instynktem do decydujących momentów, wnoszę to samo zaangażowanie i pasję w każdą sesję — od portretów w złotej godzinie po ostatni gwizdek sędziego.
           </p>
         </div>
 

@@ -21,17 +21,17 @@ export default function PortraitGallery() {
             </span>
           </div>
           <h2 className="font-serif text-4xl md:text-5xl font-light text-light">
-            Portrait &amp; <em className="italic text-gold">Occasions</em>
+            Portrety &amp; <em className="italic text-gold">Okazjonalne</em>
           </h2>
         </div>
 
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/profile.php?id=100094071768987"
           target="_blank"
           rel="noopener noreferrer"
           className="font-condensed text-xs tracking-[0.2em] uppercase text-muted hover:text-gold transition-colors duration-200 hidden md:block"
         >
-          View all on Facebook ↗
+          Sprawdź inne albumy na Facebooku ↗
         </a>
       </div>
 
@@ -108,12 +108,12 @@ export default function PortraitGallery() {
       {/* Mobile Facebook link */}
       <div className="mt-10 flex justify-center md:hidden">
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/profile.php?id=100094071768987"
           target="_blank"
           rel="noopener noreferrer"
           className="font-condensed text-xs tracking-[0.2em] uppercase text-muted hover:text-gold transition-colors duration-200"
         >
-          View all on Facebook ↗
+          Sprawdź inne albumy na Facebooku ↗
         </a>
       </div>
 
