@@ -93,7 +93,7 @@ export default function About() {
           {/* Inner photo area */}
           <div className="absolute inset-6 overflow-hidden">
             <Image
-              src="/images/about.jpg"
+              src="/images/about_photo.jpg"
               alt="Asia Mańkowska"
               fill
               className="object-cover object-center"
