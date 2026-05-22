@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="relative grid grid-cols-2 min-h-[70vh]">
@@ -89,16 +91,14 @@ export default function About() {
           <div className="absolute inset-0 border border-gold/10" />
 
           {/* Inner photo area */}
-          <div className="absolute inset-6 bg-dark-soft border border-white/5 flex items-center justify-center">
-            <div className="flex flex-col items-center gap-4 text-center">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <circle cx="24" cy="18" r="10" stroke="#c8a96e" strokeWidth="0.5" opacity="0.3" />
-                <path d="M6 42 Q24 28 42 42" stroke="#c8a96e" strokeWidth="0.5" opacity="0.3" fill="none" />
-              </svg>
-              <span className="font-condensed text-[0.65rem] tracking-[0.25em] uppercase text-muted/30">
-                Photo of Asia
-              </span>
-            </div>
+          <div className="absolute inset-6 overflow-hidden">
+            <Image
+              src="/images/about.jpg"
+              alt="Asia Mańkowska"
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 768px) 100vw, 400px"
+            />
           </div>
 
           {/* Gold corner accents */}

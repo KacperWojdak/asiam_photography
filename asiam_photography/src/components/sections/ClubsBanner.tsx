@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ClubsBanner() {
   return (
     <section className="relative bg-[#0f0e0c] border-t border-b border-white/5 py-10 px-6 overflow-hidden">
@@ -9,7 +11,7 @@ export default function ClubsBanner() {
         {/* Label — na środku u góry */}
         <div className="flex items-center gap-3">
           <span className="block w-8 h-px bg-gold/30" />
-          <span className="font-condensed text-xs tracking-[0.3em] uppercase text-muted whitespace-nowrap">
+          <span className="font-condensed text-sm tracking-[0.3em] uppercase text-muted whitespace-nowrap">
             Dumny fotograf
           </span>
           <span className="block w-8 h-px bg-gold/30" />
@@ -20,16 +22,20 @@ export default function ClubsBanner() {
 
           {/* Legsad Kościelec */}
           <div className="flex flex-col items-center gap-3 group">
-            <div className="w-16 h-16 border border-white/10 group-hover:border-gold/30 transition-colors duration-300 flex items-center justify-center bg-dark/50">
-              <span className="font-condensed text-[0.6rem] tracking-widest uppercase text-muted/50 text-center leading-tight px-1">
-                LKS
-              </span>
+            <div className="relative w-24 h-24 flex items-center justify-center">
+              <Image
+                src="/images/legsad_logo.png"
+                alt="Legsad Kościelec"
+                width={64}
+                height={64}
+                className="object-contain group-hover:opacity-80 transition-opacity duration-300"
+              />
             </div>
             <div className="flex flex-col items-center">
-              <span className="font-condensed text-xs tracking-[0.15em] uppercase text-light/70">
-                Legsad
+              <span className="font-condensed text-m tracking-[0.15em] uppercase text-light/70">
+                GKS Legsad
               </span>
-              <span className="font-condensed text-xs tracking-[0.15em] uppercase text-muted/50">
+              <span className="font-condensed text-m tracking-[0.15em] uppercase text-muted/50">
                 Kościelec
               </span>
             </div>
@@ -39,16 +45,20 @@ export default function ClubsBanner() {
 
           {/* Mewa Kunice */}
           <div className="flex flex-col items-center gap-3 group">
-            <div className="w-16 h-16 border border-white/10 group-hover:border-gold/30 transition-colors duration-300 flex items-center justify-center bg-dark/50">
-              <span className="font-condensed text-[0.6rem] tracking-widest uppercase text-muted/50 text-center leading-tight px-1">
-                MK
-              </span>
+            <div className="relative w-24 h-24 flex items-center justify-center">
+              <Image
+                src="/images/mewa_logo.png"
+                alt="Mewa Kunice"
+                width={64}
+                height={64}
+                className="object-contain group-hover:opacity-80 transition-opacity duration-300"
+              />
             </div>
             <div className="flex flex-col items-center">
-              <span className="font-condensed text-xs tracking-[0.15em] uppercase text-light/70">
-                Mewa
+              <span className="font-condensed text-m tracking-[0.15em] uppercase text-light/70">
+                LZS Mewa
               </span>
-              <span className="font-condensed text-xs tracking-[0.15em] uppercase text-muted/50">
+              <span className="font-condensed text-m tracking-[0.15em] uppercase text-muted/50">
                 Kunice
               </span>
             </div>
