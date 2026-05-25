@@ -33,7 +33,7 @@ export default function Footer() {
           {/* Kolumna 2 */}
           <div className="flex flex-col gap-4">
             <Link
-              href="/portrait"
+              href="/gallery"
               className="font-condensed text-xs tracking-[0.2em] uppercase text-light/40 hover:text-light/70 transition-colors duration-200"
             >
               Galeria Portretowa

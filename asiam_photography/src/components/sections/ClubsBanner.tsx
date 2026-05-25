@@ -24,7 +24,7 @@ export default function ClubsBanner() {
           <div className="flex flex-col items-center gap-3 group">
             <div className="relative w-24 h-24 flex items-center justify-center">
               <Image
-                src="/images/legsad_logo.png"
+                src="/images/legsad.png"
                 alt="Legsad Kościelec"
                 width={64}
                 height={64}
@@ -47,7 +47,7 @@ export default function ClubsBanner() {
           <div className="flex flex-col items-center gap-3 group">
             <div className="relative w-24 h-24 flex items-center justify-center">
               <Image
-                src="/images/mewa_logo.png"
+                src="/images/mewa.png"
                 alt="Mewa Kunice"
                 width={64}
                 height={64}

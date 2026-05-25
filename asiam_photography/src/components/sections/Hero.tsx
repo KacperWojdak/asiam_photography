@@ -37,7 +37,7 @@ export default function Hero() {
           <div className="flex items-center gap-3 mb-6">
             <span className="block w-6 h-px bg-gold" />
             <span className="font-condensed text-xs tracking-[0.28em] uppercase text-gold">
-              Portret · Natura · Okolicznościowe
+              Portret · Krajobraz · Okolicznościowe
             </span>
             <span className="block w-6 h-px bg-gold" />
           </div>
