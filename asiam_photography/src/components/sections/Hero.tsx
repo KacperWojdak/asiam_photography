@@ -51,7 +51,7 @@ export default function Hero() {
             Intymne portrety, sesje okolicznościowe i cicha piękność świata natury — uchwycone z cierpliwością i poetyckim okiem.
           </p>
 
-          <Link href="#portrait"
+          <Link href="#gallery"
               className="inline-block font-condensed text-sm tracking-[0.22em] uppercase text-gold px-10 py-4 hover:text-light transition-all duration-300"
             >
             Zobacz galerię
@@ -109,7 +109,7 @@ export default function Hero() {
           </p>
 
           <Link
-              href="#sport"
+              href="#sportsgallery"
               className="inline-block font-condensed text-sm tracking-[0.22em] uppercase px-10 py-4 hover:opacity-60 transition-all duration-300"
               style={{ color: "#8B1A2F" }}
             >

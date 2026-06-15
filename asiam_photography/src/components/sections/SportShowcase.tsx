@@ -1,45 +1,18 @@
+import Image from "next/image";
+import Link from "next/link";
+
 const photos = [
-  {
-    id: 1,
-    src: "https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Football match",
-    wide: true,
-  },
-  {
-    id: 2,
-    src: "https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Player action",
-    wide: false,
-  },
-  {
-    id: 3,
-    src: "https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Stadium crowd",
-    wide: false,
-  },
-  {
-    id: 4,
-    src: "https://images.pexels.com/photos/2834917/pexels-photo-2834917.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Running event",
-    wide: false,
-  },
-  {
-    id: 5,
-    src: "https://images.pexels.com/photos/3621234/pexels-photo-3621234.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Football celebration",
-    wide: false,
-  },
-  {
-    id: 6,
-    src: "https://images.pexels.com/photos/1618269/pexels-photo-1618269.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Sport action",
-    wide: true,
-  },
+  { id: 1, src: "/images/sport/sport_1.jpg", alt: "Piłka nożna" },
+  { id: 2, src: "/images/sport/sport_2.jpg", alt: "Piłka nożna" },
+  { id: 3, src: "/images/sport/sport_3.jpg", alt: "Piłka nożna"},
+  { id: 4, src: "/images/sport/sport_4.jpg", alt: "Piłka nożna" },
+  { id: 5, src: "/images/sport/sport_5.jpg", alt: "Piłka nożna" },
+  { id: 6, src: "/images/sport/sport_6.jpg", alt: "Piłka nożna" },
 ];
 
 export default function SportGallery() {
   return (
-    <section id="sport" className="relative bg-dark-sport py-24 px-6 md:px-12">
+    <section id="sportsgallery" className="relative bg-dark-sport py-24 px-6 md:px-12">
 
       {/* Diagonal accent top */}
       <div
@@ -76,26 +49,24 @@ export default function SportGallery() {
 
         {/* Photo 1 — wide, spans 2 columns */}
         <div className="col-span-2 relative overflow-hidden group">
-          <img
+          <Image
             src={photos[0].src}
             alt={photos[0].alt}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-75 group-hover:brightness-100"
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-75 group-hover:brightness-100"
+            sizes="(max-width: 768px) 100vw, 66vw"
           />
           <div className="absolute inset-0 bg-[#8B1A2F]/0 group-hover:bg-[#8B1A2F]/10 transition-all duration-500" />
-          {/* Action label */}
-          <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span className="font-condensed text-[0.65rem] tracking-[0.25em] uppercase text-light/60">
-              Football
-            </span>
-          </div>
         </div>
 
         {/* Photo 2 */}
         <div className="relative overflow-hidden group">
-          <img
+          <Image
             src={photos[1].src}
             alt={photos[1].alt}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-75 group-hover:brightness-100"
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-75 group-hover:brightness-100"
+            sizes="(max-width: 768px) 100vw, 66vw"
           />
           <div className="absolute inset-0 bg-[#8B1A2F]/0 group-hover:bg-[#8B1A2F]/10 transition-all duration-500" />
         </div>
@@ -107,50 +78,62 @@ export default function SportGallery() {
 
         {/* Photo 3 */}
         <div className="relative overflow-hidden group">
-          <img
+          <Image
             src={photos[2].src}
             alt={photos[2].alt}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-75 group-hover:brightness-100"
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-75 group-hover:brightness-100"
+            sizes="(max-width: 768px) 50vw, 25vw"
           />
           <div className="absolute inset-0 bg-[#8B1A2F]/0 group-hover:bg-[#8B1A2F]/10 transition-all duration-500" />
         </div>
 
         {/* Photo 4 */}
         <div className="relative overflow-hidden group">
-          <img
+          <Image
             src={photos[3].src}
             alt={photos[3].alt}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-75 group-hover:brightness-100"
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-75 group-hover:brightness-100"
+            sizes="(max-width: 768px) 50vw, 25vw"
           />
           <div className="absolute inset-0 bg-[#8B1A2F]/0 group-hover:bg-[#8B1A2F]/10 transition-all duration-500" />
-          <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <span className="font-condensed text-[0.65rem] tracking-[0.25em] uppercase text-light/60">
-              Running
-            </span>
-          </div>
         </div>
 
         {/* Photo 5 */}
         <div className="relative overflow-hidden group">
-          <img
+          <Image
             src={photos[4].src}
             alt={photos[4].alt}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-75 group-hover:brightness-100"
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-75 group-hover:brightness-100"
+            sizes="(max-width: 768px) 50vw, 25vw"
           />
           <div className="absolute inset-0 bg-[#8B1A2F]/0 group-hover:bg-[#8B1A2F]/10 transition-all duration-500" />
         </div>
 
         {/* Photo 6 — wide, spans remaining */}
         <div className="relative overflow-hidden group">
-          <img
+          <Image
             src={photos[5].src}
             alt={photos[5].alt}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-75 group-hover:brightness-100"
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105 brightness-75 group-hover:brightness-100"
+            sizes="(max-width: 768px) 50vw, 25vw"
           />
           <div className="absolute inset-0 bg-[#8B1A2F]/0 group-hover:bg-[#8B1A2F]/10 transition-all duration-500" />
         </div>
-
       </div>
+
+      <div className="flex items-center justify-center gap-10 mt-10">
+      <Link
+        href="/sport"
+        className="font-condensed text-sm tracking-[0.25em] uppercase hover:text-light transition-colors duration-300"
+        style={{ color: "#8B1A2F" }}
+      >
+        Galeria sportowa ↗
+      </Link>
+    </div>
 
       {/* Mobile Facebook link */}
       <div className="mt-10 flex justify-center md:hidden">

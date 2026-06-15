@@ -18,23 +18,13 @@ export default function Navbar() {
 
   const pathParts = pathname.split("/").filter(Boolean);
   const isHome = pathname === "/";
-  const isSimplePage = ["about", "contact", "sport"].includes(pathParts[0]);
-  const isGalleryRoot = pathParts[0] === "gallery" && pathParts.length === 1;
-  const isGalleryCategory = pathParts[0] === "gallery" && pathParts.length === 2;
-  const isGalleryAlbum = pathParts[0] === "gallery" && pathParts.length === 3;
+  const isSimplePage = ["about", "contact"].includes(pathParts[0]);
+  const isListingPage = (pathParts[0] === "gallery" || pathParts[0] === "sport") && pathParts.length === 1;
+  const isAlbumPage = (pathParts[0] === "gallery" || pathParts[0] === "sport") && pathParts.length === 2;
 
-  const handleBackToParent = () => {
-    router.push(`/gallery/${pathParts[1]}`);
+  const handleBackToListing = () => {
+  router.push(`/${pathParts[0]}`);
   };
-
-  const galleryNames: Record<string, string> = {
-    portraits: "Portrety",
-    occasions: "Okolicznościowe",
-    events: "Eventy",
-    landscape: "Krajobraz",
-  };
-
-  const categoryName = pathParts[1] ? galleryNames[pathParts[1]] ?? pathParts[1] : "";
 
   return (
     <nav
@@ -93,90 +83,47 @@ export default function Navbar() {
           </>
         )}
 
-        {/* NAVBAR 2 — /gallery (siatka kategorii) */}
-        {isGalleryRoot && (
-          <>
-            <Link
-              href="/"
-              className="font-condensed text-sm tracking-widest uppercase text-muted hover:text-light transition-colors duration-200"
-            >
-              ← Strona główna
-            </Link>
+        {/* NAVBAR 2 — /gallery navbar 4 single page*/}
+        {(isListingPage || isSimplePage) && (
+        <>
+          <Link
+            href="/"
+            className="font-condensed text-sm tracking-widest uppercase text-muted hover:text-light transition-colors duration-200"
+          >
+            ← Strona główna
+          </Link>
 
-            <Link
-              href="/"
-              className="absolute left-1/2 -translate-x-1/2 font-serif text-base tracking-widest uppercase text-light"
-            >
-              Asia <span className="italic text-gold">M.</span> Photography
-            </Link>
+          <Link
+            href="/"
+            className="absolute left-1/2 -translate-x-1/2 font-serif text-base tracking-widest uppercase text-light"
+          >
+            Asia <span className="italic text-gold">M.</span> Photography
+          </Link>
 
-            <div className="w-32" />
-          </>
-        )}
+          <div className="w-32" />
+        </>
+      )}
 
-        {/* NAVBAR 3 — /gallery/portraits itd. (lista albumów) */}
-        {isGalleryCategory && (
-          <>
-            <Link
-              href="/gallery"
-              className="font-condensed text-sm tracking-widest uppercase text-muted hover:text-light transition-colors duration-200"
-            >
-              ← Galeria
-            </Link>
+        {/* NAVBAR 3 — /gallery/portraits/album-1 (zdjęcia z albumu) */}
+        {isAlbumPage && (
+        <>
+          <button
+            onClick={handleBackToListing}
+            className="font-condensed text-sm tracking-widest uppercase text-muted hover:text-light transition-colors duration-200"
+          >
+            ← Galeria
+          </button>
 
-            <Link
-              href="/"
-              className="absolute left-1/2 -translate-x-1/2 font-serif text-base tracking-widest uppercase text-light"
-            >
-              Asia <span className="italic text-gold">M.</span> Photography
-            </Link>
+          <Link
+            href="/"
+            className="absolute left-1/2 -translate-x-1/2 font-serif text-base tracking-widest uppercase text-light"
+          >
+            Asia <span className="italic text-gold">M.</span> Photography
+          </Link>
 
-            <div className="w-32" />
-          </>
-        )}
-
-        {/* NAVBAR 4 — /gallery/portraits/album-1 (zdjęcia z albumu) */}
-        {isGalleryAlbum && (
-          <>
-            <button
-              onClick={handleBackToParent}
-              className="font-condensed text-sm tracking-widest uppercase text-muted hover:text-light transition-colors duration-200"
-            >
-              ← {categoryName}
-            </button>
-
-            <Link
-              href="/"
-              className="absolute left-1/2 -translate-x-1/2 font-serif text-base tracking-widest uppercase text-light"
-            >
-              Asia <span className="italic text-gold">M.</span> Photography
-            </Link>
-
-            <div className="w-32" />
-          </>
-        )}
-
-        {/* NAVBAR 5 — /about, /contact, /sport */}
-        {isSimplePage && (
-          <>
-            <Link
-              href="/"
-              className="font-condensed text-sm tracking-widest uppercase text-muted hover:text-light transition-colors duration-200"
-            >
-              ← Strona główna
-            </Link>
-
-            <Link
-              href="/"
-              className="absolute left-1/2 -translate-x-1/2 font-serif text-base tracking-widest uppercase text-light"
-            >
-              Asia <span className="italic text-gold">M.</span> Photography
-            </Link>
-
-            <div className="w-32" />
-          </>
-        )}
-
+          <div className="w-32" />
+        </>
+      )}
       </div>
 
       {/* Mobile menu — tylko strona główna */}

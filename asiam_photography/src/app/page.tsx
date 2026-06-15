@@ -1,7 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Showcase from "@/components/sections/Showcase";
-import SportGallery from "@/components/sections/SportGallery";
+import SportShowcase from "@/components/sections/SportShowcase";
 import Contact from "@/components/sections/Contact";
 import ClubsBanner from "@/components/sections/ClubsBanner";
 
@@ -12,7 +12,7 @@ export default function Home() {
       <About />
       <ClubsBanner />
       <Showcase />
-      <SportGallery />
+      <SportShowcase />
       <Contact />
     </main>
   );

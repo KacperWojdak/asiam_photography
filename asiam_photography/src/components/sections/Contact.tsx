@@ -79,9 +79,6 @@ export default function Contact() {
               </svg>
             </div>
             <div className="flex flex-col items-center gap-1">
-              <span className="font-condensed text-xs tracking-[0.25em] uppercase text-light/40">
-                Okolicznościowe
-              </span>
               <span className="font-condensed text-sm tracking-[0.15em] uppercase text-gold group-hover:text-light transition-colors duration-200">
                 Asia M.Photography
               </span>
@@ -101,9 +98,6 @@ export default function Contact() {
               </svg>
             </div>
             <div className="flex flex-col items-center gap-1">
-              <span className="font-condensed text-xs tracking-[0.25em] uppercase text-light/40">
-                Sport
-              </span>
               <span className="font-condensed text-sm tracking-[0.15em] uppercase text-[#8B1A2F] group-hover:text-light transition-colors duration-200">
                 Fotografia Sportowa
               </span>
@@ -125,10 +119,7 @@ export default function Contact() {
               </svg>
             </div>
             <div className="flex flex-col items-center gap-1">
-              <span className="font-condensed text-xs tracking-[0.25em] uppercase text-light/40">
-                Instagram
-              </span>
-             <span className="font-condensed text-sm tracking-[0.15em] uppercase text-light/60 group-hover:text-light transition-colors duration-200">
+              <span className="font-condensed text-sm tracking-[0.15em] uppercase text-light/60 group-hover:text-light transition-colors duration-200">
                 @asiamankowska
               </span>
             </div>

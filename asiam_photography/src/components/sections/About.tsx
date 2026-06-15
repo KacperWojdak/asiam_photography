@@ -6,16 +6,6 @@ export default function About() {
 
       {/* LEFT — Text content */}
       <div className="flex flex-col items-center justify-center text-center px-12 md:px-20 py-16 bg-dark">
-
-        {/* Eyebrow */}
-        <div className="flex items-center gap-4 mb-8">
-          <span className="block w-10 h-px bg-gold/30" />
-          <span className="font-condensed text-xs tracking-[0.3em] uppercase text-muted">
-            Asia Mańkowska Photography
-          </span>
-          <span className="block w-10 h-px bg-gold/30" />
-        </div>
-
         {/* Heading */}
         <h2 className="font-serif text-4xl md:text-5xl font-light leading-[1.2] text-light mb-12 whitespace-nowrap">
           Dwa światy, <em className="italic text-gold">jedna perspektywa</em>
@@ -40,9 +30,6 @@ export default function About() {
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-2"
           >
-            <span className="font-condensed text-xs tracking-[0.25em] uppercase text-muted/50">
-              Portrait & Occasions
-            </span>
             <span className="font-condensed text-sm tracking-[0.2em] uppercase text-gold group-hover:text-light transition-colors duration-200">
               Asia M.Photography ↗
             </span>
@@ -56,9 +43,6 @@ export default function About() {
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-2"
           >
-            <span className="font-condensed text-xs tracking-[0.25em] uppercase text-muted/50">
-              Sport Photography
-            </span>
             <span className="font-condensed text-sm tracking-[0.2em] uppercase text-[#8B1A2F] group-hover:text-light transition-colors duration-200">
               Fotografia Sportowa ↗
             </span>
